@@ -1,0 +1,53 @@
+:root {
+  --criot-primary: #0d9eff;
+  --criot-dark: #0a1628;
+}
+
+body {
+  background: var(--criot-dark);
+  color: #e6eef7;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+a { color: var(--criot-primary); }
+
+.bg-criot { background-color: var(--criot-dark) !important; }
+.text-criot { color: var(--criot-primary) !important; }
+.btn-criot {
+  background: linear-gradient(135deg, #0d9eff, #4f46e5);
+  color: #fff;
+  border: none;
+}
+.btn-criot:hover { color: #fff; opacity: 0.9; }
+
+.card-criot {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.card-criot:hover {
+  transform: translateY(-4px);
+  border-color: var(--criot-primary);
+}
+
+.hero {
+  background: radial-gradient(ellipse at top, rgba(13, 158, 255, 0.25), transparent 60%),
+              var(--criot-dark);
+  padding: 6rem 0 4rem;
+}
+
+.team-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--criot-primary);
+}
+
+footer { background: #060e1c; }
+
+.tag-criot {
+  background-color: rgba(13, 158, 255, 0.12);
+  color: var(--criot-primary);
+  border: 1px solid rgba(13, 158, 255, 0.35) !important;
+}
